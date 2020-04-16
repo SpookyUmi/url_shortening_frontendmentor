@@ -7,89 +7,125 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
 
 <body>
 
   <header class="topbar">
-    <h1 class="header-title">Shortly</h1>
-
-    <nav class="header-nav">
-      Features
-      Pricing
-      Resources
-
-      Login
-      Sign Up
-    </nav>
+    <img src="./images/logo.svg" alt="shortly" class="shortly">
+    <div class="closed open" id="menu">
+      <ul class="three">
+        <li><a href="">Features</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Resources</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Login</a></li>
+        <li><a href="" class="signup">Sign Up</a></li>
+      </ul>
+    </div>
+    <img src="./images/open-menu.svg" alt="" class="togglenav" width="30">
   </header>
 
   <div class="container">
-    More than just shorter links
+    <div class="image">
+      <img src="./images/illustration-working.svg" alt="" class="main-img">
+    </div>
+    <div class="main">
+      <h1>More than just shorter links</h1>
 
-    Build your brand’s recognition and get detailed insights
-    on how your links are performing.
+      <p>Build your brand’s recognition and get detailed insights
+        on how your links are performing.</p>
 
-    Get Started
+      <a href="#" class="get-started">Get Started</a>
+    </div>
 
-    <form action="" class="flex-form">
-      <input type="search" placeholder="Shorten a link here" required>
-      <input type="submit" value="Shorten It !"> <!-- Shorten It! -->
-    </form>
-    Advanced Statistics
+    <div class="form">
+      <form action="" class="flex-form">
+        <input type="search" placeholder="Shorten a link here" required>
+        <a href="#" class="form-button">Shorten It !</a>
+      </form>
+    </div>
+    <div class="cards">
+      <h2>Advanced Statistics</h2>
 
-    Track how your links are performing across the web with our
-    advanced statistics dashboard.
+      <p>Track how your links are performing across the web with our
+        advanced statistics dashboard.</p>
 
-    Brand Recognition
+      <div class="card-brand">
+        <h3> Brand Recognition</h3>
 
-    Boost your brand recognition with each click. Generic links don’t
-    mean a thing. Branded links help instil confidence in your content.
+        <p> Boost your brand recognition with each click. Generic links don’t
+          mean a thing. Branded links help instil confidence in your content.</p>
+      </div>
+      <div class="card-records">
+        <h3> Detailed Records</h3>
 
-    Detailed Records
+        <p> Gain insights into who is clicking your links. Knowing when and where people engage with your content helps
+          inform better decisions.</p>
+      </div>
+      <div class="card-fully">
+        <h3> Fully Customizable</h3>
 
-    Gain insights into who is clicking your links. Knowing when and where
-    people engage with your content helps inform better decisions.
+        <p> Improve brand awareness and content discoverability through customizable links, supercharging audience
+          engagement.</p>
+      </div>
+    </div>
 
-    Fully Customizable
+    <h2>Boost your links today</h2>
 
-    Improve brand awareness and content discoverability through customizable
-    links, supercharging audience engagement.
-
-    Boost your links today
-
-    Get Started
+    <a href="#" class="get-started">Get Started</a>
   </div>
+  <footer class="footer">
+    <h2 class="footer-title">Shortly</h2>
+    <div class="footer-features">
+      <h4> Features</h4>
 
-  Features
+      Link Shortening
+      Branded Links
+      Analytics
+    </div>
+    <div class="footer-resources">
+      <h4> Resources</h4>
 
-  Link Shortening
-  Branded Links
-  Analytics
+      Blog
+      Developers
+      Support
+    </div>
+    <div class="footer-company">
+      <h4> Company</h4>
 
-  Resources
+      About
+      Our Team
+      Careers
+      Contact
+    </div>
+    <div class="socials">
+      <img src="./images/icon-facebook.svg" alt="Facebook">
+      <img src="./images/icon-twitter.svg" alt="Twitter">
+      <img src="./images/icon-pinterest.svg" alt="Pinterest">
+      <img src="./images/icon-instagram.svg" alt="Instagram">
+    </div>
 
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
+  </footer>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script>
+    let toggleNavButton = document.querySelector('.togglenav');
+    toggleNavButton.addEventListener('click', () => {
+      document.querySelector('#menu').classList.toggle('open')
+    })
+  </script>
+
 </body>
 
 </html>

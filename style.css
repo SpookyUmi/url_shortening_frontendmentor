@@ -1,4 +1,138 @@
+html {
+  box-sizing: border-box;
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: hsl(255, 11%, 22%);
+}
+
+body a {
+  text-decoration: none;
+}
+
+/* --- topbar with menu --- */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shortly {
+  width: 130px;
+  margin: 25px 20px;
+}
+
+.togglenav {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.closed {
+  display: none;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 88%;
+  text-align: center;
+  background: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  margin: 48vh auto 0 auto;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  z-index: 2;
+}
+
+.open ul {
+  padding: 0;
+  margin: 0;
+}
+
+.open ul li {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.open a {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.three::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-top: 5px;
+  background: hsl(257, 30%, 40%);
+}
+
+.signup {
+  display: block;
+  width: 98%;
+  padding: 12px 0;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+/* --- container --- */
+
+.container {
+  text-align: center;
+}
+
+.get-started, .form-button, .signup {
+  color: hsl(0, 0%, 100%);
+  background: hsl(180, 66%, 49%);
+}
+
+/* --- main --- */
+
+.main {
+  overflow: hidden;
+  padding-bottom: 3em;
+}
+
+.image {
+  position: relative;
+  height: 500px;
+  z-index: 1;
+}
+
+.image img {
+  position: absolute;
+  width: 480px;
+  height: auto;
+  right: -10vw;
+}
+
+.main h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2em;
+  margin-top: 0.85em;
+  margin-bottom: 0;
+}
+
+.main p {
+  color: hsl(257, 7%, 63%);
+  margin-top: 0.7em;
+  padding: 0 0.5em;
+}
+
+.main .get-started {
+  padding: 15px;
+}
 
 
 .attribution {
