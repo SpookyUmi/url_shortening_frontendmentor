@@ -71,7 +71,7 @@ body p {
   padding: 1rem 0;
 }
 
-.open a:hover {
+.toplink:hover {
   opacity: 0.5;
 }
 
@@ -168,6 +168,10 @@ body p {
 
 .form-button {
   border-radius: 5px;
+}
+
+input {
+  text-indent: 1rem;
 }
 
 .cards {
