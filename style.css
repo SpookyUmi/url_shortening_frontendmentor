@@ -112,14 +112,14 @@ body p {
 
 .main {
   width: 90%;
-  height: 53vh;
+  height: 27rem;
   margin: 0 auto;
 }
 
 .image {
   overflow: hidden;
   position: relative;
-  height: 330px;
+  height: 20rem;
   z-index: 1;
 }
 
@@ -322,4 +322,29 @@ input {
 
 .attribution a {
       color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+
+  .flex-main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 60vw;
+    padding-left: 3rem;
+  }
+
+  .main {
+    width: 55%;
+    height: auto;
+    order: -1;
+  }
+
+  .main h1 {
+    font-size: 3rem;
+  }
+
+  .image img {
+    position: relative;
+    right: -50px;
+  }
 }
