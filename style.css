@@ -326,10 +326,15 @@ input {
 
 @media only screen and (min-width: 768px) {
 
+  .topbar {
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+
   .flex-main {
     display: flex;
     flex-wrap: nowrap;
-    height: 60vw;
+    height: 65vw;
     padding-left: 3rem;
   }
 
@@ -343,8 +348,20 @@ input {
     font-size: 3rem;
   }
 
+  .main h1, .main p {
+    text-align: left;
+  }
+
   .image img {
     position: relative;
     right: -50px;
   }
+
+  .footer {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
 }
