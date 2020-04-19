@@ -357,6 +357,12 @@ input {
     right: -50px;
   }
 
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
   .footer {
     display: flex;
     text-align: left;
