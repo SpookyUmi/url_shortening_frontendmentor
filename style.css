@@ -456,7 +456,7 @@ input {
 }
 
 .image {
-  height: 40rem;
+  height: 100%;
 }
 
 .image img {
