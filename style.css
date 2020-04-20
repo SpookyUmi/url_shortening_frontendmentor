@@ -334,8 +334,12 @@ input {
 /* --- Top --- */
 
   .topbar {
-    max-width: 45rem;
+    width: 45rem;
     margin: 0 auto;
+  }
+
+  .shortly {
+    margin-left: 0;
   }
 
   .flex-main {
@@ -392,7 +396,73 @@ input {
 
 }
 
-/*   .footer {
+@media only screen and (min-width: 1024px) {
+
+  /* --- Top --- */
+
+.topbar {
+  width: 85%;
+}
+
+.closed {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.closed .toplink {
+  color: hsl(257, 7%, 63%);
+}
+
+.closed ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.closed li {
+  list-style: none;
+}
+
+.closed .signup {
+  width: 8rem;
+  padding: 8px;
+}
+
+.closed li:last-of-type {
+  grid-column: 3 / 4;
+}
+
+.closed ul:nth-child(2n) li:first-of-type {
+  grid-column: 2 / 3;
+}
+
+.togglenav {
+  display: none;
+}
+
+.three::after {
+  display: none;
+}
+
+.flex-main {
+  padding-left: 7%;
+}
+
+.image {
+  height: 40rem;
+}
+
+.image img {
+  width: 40rem;
+  right: 0;
+}
+
+  /* --- Bottom --- */
+
+.footer {
     display: flex;
     text-align: left;
     justify-content: space-between;
@@ -402,4 +472,5 @@ input {
   .footer h2 {
     margin-top: 0;
   }
- */
+
+}
