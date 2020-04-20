@@ -451,6 +451,10 @@ input {
   padding-left: 7%;
 }
 
+.main h1 {
+  font-size: 3.5rem;
+}
+
 .image {
   height: 40rem;
 }
@@ -460,17 +464,28 @@ input {
   right: 0;
 }
 
+  /* --- Middle --- */
+
+
+
   /* --- Bottom --- */
 
 .footer {
-    display: flex;
-    text-align: left;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
+  text-align: left;
+  justify-content: space-between;
+  align-items: flex-start;
   }
 
-  .footer h2 {
-    margin-top: 0;
-  }
+.footer h2 {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.socials {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
 
 }
