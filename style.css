@@ -60,7 +60,7 @@ body p {
   left: 0;
   right: 0;
   padding: 1.5rem 2rem;
-  z-index: 2;
+  z-index: 3;
 }
 
 .open ul li, .footer ul li {
@@ -168,6 +168,7 @@ body p {
   margin: 0 auto;
   background: right top url(./images/bg-shorten-mobile.svg) no-repeat, hsl(257, 40%, 24%);
   border-radius: 8px;
+  z-index: 2;
 }
 
 .form-button {
@@ -176,6 +177,7 @@ body p {
 
 input {
   text-indent: 1rem;
+  border-radius: 5px;
 }
 
 .cards {
@@ -207,7 +209,6 @@ input {
   margin: 0 auto;
   top: 150px;
   z-index: 1;
-  /* transform: rotate(90deg); */
 }
 
 .card-body p {
@@ -370,18 +371,22 @@ input {
 
   /* --- Middle --- */
 
-  .form {
+.form {
     display: grid;
     grid-template-columns: 1fr 12rem;
     grid-template-rows: 1fr;
     top: -71px;
     padding: 2.7rem;
     background: right top url(./images/bg-shorten-desktop.svg) no-repeat, hsl(257, 40%, 24%);
-  }
+}
 
-  .button {
+.button {
     margin-left: 0;
-  }
+}
+
+.card-brand, .card-records, .card-fully {
+  max-width: 70%;
+}
 
   /* --- Bottom --- */
 
@@ -466,13 +471,66 @@ input {
 
   /* --- Middle --- */
 
+.cards {
+  height: 100%;
+}
 
+.cyan-bar {
+  max-width: 90%;
+  height: 50vw;
+  max-height: 33rem;
+  margin: 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.cyan-bar::after {
+  content: "";
+  background: hsl(180, 66%, 49%);
+  position: absolute;
+  width: 8px;
+  height: 150%;
+  max-height: 1000px;
+  z-index: 1;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform:  translateX(-50%) translateY(-38%) rotate(-90deg);
+}
+
+.card-brand, .card-records, .card-fully {
+  width: 70%;
+  max-width: 23rem;
+  height: 17rem;
+  margin: 1rem;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-body p {
+  font-size: .9rem;
+}
+
+.card-brand {
+  margin-bottom: 7rem;
+}
+
+.card-fully {
+  margin-top: 7rem;
+}
+
+.card-img {
+  left: 30px;
+  right: unset;
+}
 
   /* --- Bottom --- */
 
 .footer {
   display: grid;
-  grid-template-columns: 3fr 2fr 2fr 2fr 3fr;
+  grid-template-columns: 4fr 2fr 2fr 2fr 3fr;
   text-align: left;
   justify-content: space-between;
   align-items: flex-start;
@@ -488,4 +546,27 @@ input {
   margin-left: 1rem;
 }
 
+}
+
+@media only screen and (min-width: 1280px) {
+
+.topbar {
+  max-width: 1110px;
+}
+
+.main {
+  max-width: 580px;
+}
+
+.main p {
+  margin-right: 3rem;
+}
+
+.form {
+  max-width: 1110px;
+}
+
+.card-body p {
+    font-size: 1rem;
+}
 }
