@@ -19,9 +19,9 @@ The designs were created to the following widths:
 - Red: hsl(0, 87%, 67%)
 
 ### Neutral
-
+***
 - Gray: hsl(0, 0%, 75%)
-- Grayish Violet: hsl(257, 7%, 63%)
+- Grayish Violet: **hsl(257, 7%, 63%)**
 - Very Dark Blue: hsl(255, 11%, 22%)
 - Very Dark Violet: hsl(260, 8%, 14%)
 
