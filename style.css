@@ -32,6 +32,7 @@ body p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .shortly {
@@ -53,10 +54,10 @@ body p {
   flex-direction: column;
   position: absolute;
   width: 88%;
-  text-align: center;
   background: hsl(257, 27%, 26%);
   border-radius: 10px;
-  margin: 28rem auto 0 auto;
+  margin: 0 auto;
+  top: 70%;
   left: 0;
   right: 0;
   padding: 1.5rem 2rem;
@@ -569,4 +570,12 @@ input {
 .card-body p {
     font-size: 1rem;
 }
+}
+
+@media only screen and (min-width: 1441px) {
+
+.boost {
+    background: linear-gradient(260deg, #6b50b1 0%, #332556 100%);
+}
+
 }
